@@ -6,17 +6,10 @@
 
 public class BankAccountTester {
 	public static void main(String[] args){
-		BankAccount bank = new BankAccount();
-		bank.deposit(1000);
-		bank.withdraw(500);
-		bank.withdraw(400);
-		System.out.println("The bank account has a balance of $"+bank.getBalance());
-		System.out.println("Expected output: $100.0");
-		System.out.println();
-		BankAccount momsSavings = new BankAccount(1000);
-		momsSavings.addInterest(10);
-		System.out.println("Mom's savings bank account value: $"+momsSavings.getBalance());
-		System.out.print("Expected output: $1100.0");
+		 BankAccount myBankAccount = new BankAccount();
+       myBankAccount.deposit(500);
+       myBankAccount.withdraw(216);
+       double result = myBankAccount.getBalance();
 	}
 }
 
